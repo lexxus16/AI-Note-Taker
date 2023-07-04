@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpage Summarizer</title>
+  <style>
+    body {
+      background-color: white;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      width: 350px; /* Adjust the width as desired */
+      height: 520px;
+    }
+    
+    #header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    #header-text {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: right;
+      font-family: "Forte", cursive;
+    }
+    
+    #copyBtn,
+    #downloadBtn {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: transparent;
+    }
+    
+    #summarizeBtn {
+      padding: 10px;
+      margin: 200px auto 0;
+      display: block;
+      width: 120px;
+      background-color: #1E90FF;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    
+    #summarizedText {
+      display: none;
+      margin-top: 20px;
+      white-space: pre-line;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div id="header">
+    <button id="copyBtn"><img src="copy.png" alt="Copy"> Copy</button>
+    <button id="downloadBtn"><img src="download.png" alt="Download"> Download</button>
+    <div id="header-text">Smart Notes</div>
+  </div>
+  <button id="summarizeBtn">Summarize</button>
+  <div id="summarizedText"></div>
+</body>
+</html>
